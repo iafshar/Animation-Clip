@@ -1,11 +1,21 @@
-# Animation-Player
-Animation player that takes in a .skel, .skin, and .anim file and presents a multi-jointed character in motion
+## How to: install dependencies using homebrew
 
-The .skel file will provide information to the player about the character's joints.
-The .skin file will provide information to the player about the skin mesh of the character that will be wrapped around the joints.
-The .anim file will provide information to the player about how the character should move.
+---
 
-Usage:
-/menv file1.skel file2.skin file3.anim
+1. install homebrew
+    ```
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
 
-Example files (wasp.skel, wasp.skin, wasp_walk.anim) are provided that give you a looped animation clip of a wasp walking.
+2. install `glm` and `glfw`
+    ```
+    brew install glm glfw
+    ```
+
+3. check installation using
+    ```
+    brew info glm glfw
+    ```
+    if you are on Intel chip (you can check this by `arch` in terminal, if it returns `i386`, you are), you should expect libraries installed in `/usr/local/...`. Otherwise, libraries should be installed in `/opt/homebrew/...`
+
+4. email TA Peter (bwu@ucsd.edu) for further complications during setup. 
